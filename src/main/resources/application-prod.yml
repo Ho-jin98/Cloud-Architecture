@@ -1,0 +1,2 @@
+spring.application.name=cloud-architecture
+implementation 'io.awspring.cloud:spring-cloud-aws-starter-parameter-store:4.0.0-RC1'

@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: cloud-architecture
+  profiles:
+    active: local
+  jpa:
+    open-in-view: false
+
+cloud:
+  aws:
+    region:
+      static: ap-northeast-2
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: never
+      # always : 상세 정보 공개
+      # never : 상세 정보 X
+

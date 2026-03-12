@@ -1,2 +1,23 @@
-spring.application.name=cloud-architecture
-implementation 'io.awspring.cloud:spring-cloud-aws-starter-parameter-store:4.0.0-RC1'
+spring:
+  datasource:
+    url: ${spring.datasource.url}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: validate
+#      validate : 엔티티랑 테이블 구조만 검증, 변경 안 함 (운영용)
+    show-sql: false
+  config:
+    import: aws-parameterstore:/cloud-architecture/prod/
+
+cloud:
+  aws:
+    s3:
+      bucket: profile-picture-hojin-files
+
+info:
+  app:
+    team-name: ${team-name}

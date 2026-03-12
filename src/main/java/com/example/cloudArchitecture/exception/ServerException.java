@@ -4,10 +4,10 @@ import lombok.Getter;
 
 @Getter
 
-public class ServiceException extends RuntimeException{
+public class ServerException extends RuntimeException{
     private ErrorCode errorCode;
 
-    public ServiceException(ErrorCode errorCode) {
+    public ServerException(ErrorCode errorCode) {
         super(errorCode.getMessage());
         this.errorCode = errorCode;
     }

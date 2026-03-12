@@ -1,7 +1,6 @@
-package com.example.cloudarchitecture.exception;
+package com.example.cloudArchitecture.exception;
 
 import lombok.Getter;
-import org.springframework.http.HttpStatus;
 
 @Getter
 

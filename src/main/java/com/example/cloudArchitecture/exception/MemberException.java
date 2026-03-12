@@ -1,4 +1,16 @@
-package com.example.cloudarchitecture.exception;
+package com.example.cloudArchitecture.exception;
 
-public class MemberException {
+import lombok.Getter;
+
+@Getter
+
+public class MemberException extends RuntimeException {
+
+    private final ErrorCode errorCode;
+
+    public MemberException(ErrorCode errorCode) {
+        super(errorCode.getMessage());
+        this.errorCode = errorCode;
+
+    }
 }

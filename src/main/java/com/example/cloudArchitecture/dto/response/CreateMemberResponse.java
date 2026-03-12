@@ -4,13 +4,13 @@ import lombok.Getter;
 
 @Getter
 
-public class GetMemberResponse {
+public class CreateMemberResponse {
     private final Long id;
     private final String name;
     private final Integer age;
     private final String mbti;
 
-    public GetMemberResponse(Long id, String name, Integer age, String mbti) {
+    public CreateMemberResponse(Long id, String name, Integer age, String mbti) {
         this.id = id;
         this.name = name;
         this.age = age;

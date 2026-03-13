@@ -352,4 +352,15 @@ java -jar app.jar --spring.profiles.active=prod
 ### 7. MaxUploadSizeExceededException
 - **원인** : `max-file-size`만 설정하고 `max-request-size`는 기본값(1MB) 유지
 - **해결** : `max-request-size: 10MB` 추가
+---
 
+<div align="center">
+  <br>
+  <b>시간내어 봐주셔서 감사합니다!</b><br>
+  <p align="center">
+  <p align="center">
+  <img src="images/Thank-you.png" width="400"/>
+  <br>
+  <p align="center">
+  </p>
+</div>

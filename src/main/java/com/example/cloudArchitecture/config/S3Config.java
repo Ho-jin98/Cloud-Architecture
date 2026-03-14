@@ -29,7 +29,7 @@ public class S3Config {
 
 /* 빌더 (builder)는 갑자기 어떻게 나온 걸까?
  -> AWS SDK 내부에서 이미 빌더 패턴으로 설계되어 있어서 저렇게 호출할 수 있음
- AWS 개발자들이 S3Client를 만들 때 빌더 패턴으로 설계를해놓을 것!
+ AWS 개발자들이 S3Client를 만들 때 빌더 패턴으로 설계를해놓은 것!
 * S3Client -> AWS SDK에서 제공하는 클래스
 * builder() -> AWS SDK 내부에서 이미 빌더 패턴으로 설계되어 있어서 사용 가능! */
 
